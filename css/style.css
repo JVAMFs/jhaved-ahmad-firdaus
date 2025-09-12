@@ -74,6 +74,30 @@ h2.section-title::after {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Projects Card Styling */
+.projects .card-img-top {
+  height: 255px; /* Tinggi gambar seragam */
+  object-fit: cover; /* Crop gambar biar proporsional */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.projects .card-body {
+  flex: 1; /* Isi card fleksibel supaya tinggi rata */
+}
+
 /* Footer */
 footer {
   background: #f1f1f1;
